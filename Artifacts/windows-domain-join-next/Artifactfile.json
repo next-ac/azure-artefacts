@@ -13,7 +13,7 @@
       "type": "string",
       "displayName": "Domain join user account",
       "description": "The Active Directory (AD) account (e.g. CORP\\user or user@corp.contoso.com) that has permissions to join the domain",
-      "defaultValue": "next-plc\\svcAltiris"
+      "defaultValue": "administrator@devtest.local"
     },
     "domainAdminPassword": {
       "type": "securestring",
@@ -24,14 +24,14 @@
       "type": "string",
       "displayName": "Active Directory domain name",
       "description": "The name of the Active Directory (AD) domain to join (e.g. corp.contoso.com).",
-      "defaultValue": "next-uk.next.loc"
+      "defaultValue": "devtest.local"
     },
     "ouPath": {
       "type": "string",
       "displayName": "Active Directory (AD) domain OU",
       "description": "The OU path e.g. OU=Workstations,OU=Machines,DC=corp,DC=contoso,DC=com",
       "allowEmpty": true,
-      "defaultValue": "OU=DevTestLabs,OU=Servers,OU=End,OU=Computers,OU=NextPLC,DC=next-uk,DC=next,DC=loc"
+      "defaultValue": "OU=Computers,DC=devtest,DC=local"
     }
   },
   "runCommand": {
